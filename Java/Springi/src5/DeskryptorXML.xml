@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- 	<bean id="czlowiek1" class="mojeKlasy.Czlowiek"> -->
+<!-- 		<property name="imie" value="Tomasz" /> -->
+<!-- 		<property name="mojNapoj" ref="Napoj"/> -->
+				
+<!-- 	</bean> -->
+
+<!-- 	<bean id="Napoj" class="mojeKlasy.Kawa"> -->
+		
+<!-- 	</bean> -->
+	<bean id="mojAdres" class="mojeKlasy.Adres">
+	<property name="ulica" value="Robotnicza3"/>
+	<property name="miasto" value="Wrocław"/>
+	</bean>
+<!-- <bean id="czlowiekZAdresem" class="mojeKlasy.Czlowiek" autowire="byName"> -->
+<!-- 		<property name="imie" value="Zdzich" /> -->
+		
+				
+<!-- 	</bean> -->
+	
+	
+</beans>

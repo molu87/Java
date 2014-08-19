@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="ja2" class="mojeklasy.Czlowiek">
+<constructor-arg value="Michał"/>
+</bean>
+
+<bean id="kawa" class="mojeklasy.Kawa"/>
+
+<bean id="kakao" class="mojeklasy.Kakao"/>
+
+<bean id ="ja1" class="mojeklasy.Czlowiek">
+<property name="imie" value="stefan"/>
+<property name="mojNapoj">
+<ref bean="kawa"/>
+</property>
+</bean>
+
+
+
+<bean id ="ja" class="mojeklasy.Czlowiek">
+<property name="imie" value="stefan"/>
+<property name="mojNapoj">
+<ref bean="kakao"/>
+</property>
+</bean>
+
+
+<bean id="czlekZAdresem" class="mojeklasy.Czlowiek">
+<property name="imie" value="Zdzisiek"/>
+<property name="adres" value="ul.blotna 6"/>
+</bean>
+
+
+</beans>
